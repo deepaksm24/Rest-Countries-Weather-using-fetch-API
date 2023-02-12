@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+   <style>
+#flag{
+height: 200px;
+}
+#text-all{
+  font-family: 'Roboto', sans-serif; 
+
+}
+#name{
+  font-family: 'Merriweather', serif;
+  font-size:larger;
+}
+
+   </style>
+</head>
+<body style="background-color: rgb(112, 108, 103);">
+ 
+    <div class="container" id="container">
+    <div><h1 class="text-center" id="title">Rest Countries & Weather using fetch API </h1></div>
+
+
+
+  <div class="container-fluid">
+    <form class="row" id="form">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 ">
+        <input type="text" id="first-name"  placeholder="Country Name" required>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 p-1">
+        <button class="btn btn-info" id="search" type="submit">Search</button>
+      </div> 
+      </div>
+        </form>
+
+</div>
+
+  <br>
+    <div class="row">
+        
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 " id="col1">
+            <div class="card h-100  " style="width: 18rem; background-color:bisque">
+
+                <div class="card-header text-center text-white bg-dark" style="background-color: aquamarine;" id="name"><h3>country</h3></div>
+
+<br>
+                <img class="card-img-top" src="lightning-bolts.jpg" alt="Card image cap" id="flag">
+                <div class="bg-secondary p-2 text-dark bg-opacity-50 " id="btmdata" >
+                <div class="card-body " id="card-body" style="background-color: aquamarine;">
+    <div class="card-text " id="text-all" >
+                  <p class="text-center " id="Capital">Capital</p>
+                  <p class="text-center" id="Region">Region</p>
+                  <p class="text-center" id="LatIng">LatIng</p>
+  
+                  <p class="text-center" id="CountryCode">CountryCode</p>
+     </div>
+     <div class="text-center" id="buttonreplace1">
+        <a href="#" class="btn btn-primary" id="button1">Click for Weather</a>
+      </div>
+    </div>
+      
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4" id="col2">
+
+          <div class="card h-100  " style="width: 18rem; background-color:bisque">
+
+            <div class="card-header text-center text-white bg-dark" style="background-color: aquamarine;" id="name"><h3>country</h3></div>
+
+<br>
+            <img class="card-img-top" src="lightning-bolts.jpg" alt="Card image cap" id="flag">
+            <div class="bg-secondary p-2 text-dark bg-opacity-50" id="btmdata">
+            <div class="card-body " id="card-body" style="background-color: aquamarine;">
+<div class="card-text"  id="text-all">
+              <p class="text-center" id="Capital">Capital</p>
+              <p class="text-center" id="Region">Region</p>
+              <p class="text-center" id="LatIng">LatIng</p>
+
+              <p class="text-center" id="CountryCode">CountryCode</p>
+ </div>
+ <div class="text-center" id="buttonreplace2">
+    <a href="#" class="btn btn-primary" id="button2">Click for Weather</a>
+  </div>
+</div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4" id="col3">
+
+
+          <div class="card h-100  " style="width: 18rem; background-color:bisque">
+
+            <div class="card-header text-center text-white bg-dark" style="background-color: aquamarine;" id="name"><h3>country</h3></div>
+
+<br>
+            <img class="card-img-top" src="lightning-bolts.jpg" alt="Card image cap" id="flag">
+            <div class="bg-secondary p-2 text-dark bg-opacity-50" id="btmdata">
+            <div class="card-body " id="card-body" style="background-color: aquamarine;">
+<div class="card-text"  id="text-all">
+              <p class="text-center" id="Capital">Capital</p>
+              <p class="text-center" id="Region">Region</p>
+              <p class="text-center" id="LatIng">LatIng</p>
+
+              <p class="text-center" id="CountryCode">CountryCode</p>
+ </div>
+ <div class="text-center" id="buttonreplace3">
+    <a href="#" class="btn btn-primary" id="button3">Click for Weather</a>
+  </div>
+</div>
+                </div>
+              </div>
+
+        </div>
+                
+    </div>
+
+   <script  src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
